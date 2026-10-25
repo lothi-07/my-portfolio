@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Lothika K - 3rd Year B.Tech AI & Data Science Student | DevOps Intern | Full Stack & AI Developer Portfolio" />
+  <meta name="keywords"
+    content="Lothika K, Portfolio, AI & Data Science, DevOps Intern, Python, React, Machine Learning, Full Stack Developer" />
+  <meta property="og:title" content="Lothika K | AI & Data Science Student & DevOps Intern" />
+  <meta property="og:description"
+    content="Explore Lothika K's portfolio - featuring AI automation, DevOps pipelines, full-stack projects, and tech journey." />
+  <title>Lothika K | Portfolio</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@500;700&family=Playfair+Display:ital,wght@0,700;1,600&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="images/magnific__modern-flat-vector-logo-featuring-two-symmetrical-__28847.png" />
+</head>
+
+<body class="loading">
+
+  <!-- Page loader -->
+  <div class="page-loader" id="pageLoader" aria-hidden="true">
+    <div class="loader-inner">
+      <div class="loader-logo">
+        <img src="images/magnific__modern-flat-vector-logo-featuring-two-symmetrical-__28847.png"
+          alt="Lothika K Logo" />
+      </div>
+      <p class="loader-text">Loading Lothika's Space...<span class="loader-dots"></span></p>
+      <div class="loader-bar"><span></span></div>
+    </div>
+  </div>
+
+  <!-- Cursor glow (desktop) -->
+  <div class="cursor-glow" id="cursorGlow" aria-hidden="true"></div>
+
+  <!-- Scroll progress -->
+  <div class="scroll-progress" aria-hidden="true"></div>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand brand-logo" href="#hero">
+        <div class="brand-icon-wrap">
+          <img src="images/magnific__modern-flat-vector-logo-featuring-two-symmetrical-__28847.png" alt="Portfolio logo"
+            class="brand-icon" />
+        </div>
+        <span class="brand-text">
+          <span class="brand-name">Lothika<span> K</span></span>
+          <span class="brand-tagline"> Think Different🚀</span>
+        </span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <div class="navbar-nav">
+          <a class="nav-link" href="#about">About</a>
+          <a class="nav-link" href="#education">Education</a>
+          <a class="nav-link" href="#skills">Skills</a>
+          <a class="nav-link" href="#projects">Projects</a>
+          <a class="nav-link" href="#contact">Contact</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="hero">
+    <canvas id="particleCanvas" class="particle-canvas" aria-hidden="true"></canvas>
+    <div class="hero-bg" aria-hidden="true"></div>
+
+    <div class="container position-relative">
+      <div class="row align-items-center g-4 g-lg-5">
+        <div class="col-lg-5 reveal reveal-left">
+          <div class="hero-photo-col">
+            <div class="hero-photo-ring"></div>
+            <div class="hero-photo-wrap">
+              <img src="images/img.png" alt="Lothika K" class="hero-photo" />
+              <div class="hero-badge">
+                Open for Internships and collaborations 💌
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-7 reveal reveal-right">
+          <div class="hero-card tilt-card">
+            <div class="hero-greeting">Hey there... <span class="heart-beat">♥</span>, I'm</div>
+            <h1 class="hero-name">Lothika K</h1>
+            <p class="hero-tagline" id="typedTagline"></p>
+            <p class="hero-desc">
+              3rd-year B.Tech AI & Data Science student by day, DevOps Intern @ Prime Vector .
+              No cap, I turn complex problems into clean, automated, and full-stack solutions. ⚡
+            </p>
+            <div class="hero-stats">
+              <div class="hero-stat">
+                <div class="hero-stat-val" data-count="8">0</div>
+                <div class="hero-stat-label">Projects</div>
+              </div>
+              <div class="hero-stat">
+                <div class="hero-stat-val" data-count="15">0</div>
+                <div class="hero-stat-label">Tech Stack</div>
+              </div>
+              <div class="hero-stat">
+                <div class="hero-stat-val">3rd</div>
+                <div class="hero-stat-label">Year Student</div>
+              </div>
+            </div>
+            <div class="hero-btns">
+              <div class="hire-me-wrap">
+                <a href="mailto:lothika6649@gmail.com?subject=Job%20/%20Internship%20Opportunity&body=Hi%20Lothika,%20We%20saw%20your%20portfolio%20and%20would%20love%20to%20hire%20you!"
+                  id="hireMeBtn" class="btn-primary-custom btn-magnetic btn-hire-me">
+                  <i class="fas fa-briefcase"></i> Hire Me ✨
+                </a>
+              </div>
+              <a href="https://drive.google.com/uc?export=download&id=1-b_z7ud9yySJRUYzHcmDDyrG_5AgSsK-" target="_blank"
+                rel="noopener" id="resumeButton" class="btn-resume" aria-label="Download resume">
+                <i class="fas fa-file-arrow-down" aria-hidden="true"></i> Resume
+              </a>
+              <a href="#contact" class="btn-outline-custom btn-magnetic"><i class="fas fa-paper-plane"></i> Hit Me
+                Up</a>
+              <a href="https://github.com/lothi-07" target="_blank" rel="noopener"
+                class="btn-outline-custom btn-magnetic">
+                <i class="fab fa-github"></i> GitHub
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <a href="#about" class="scroll-hint" aria-label="Scroll down">
+      <span class="scroll-hint-text">Scroll</span>
+      <span class="scroll-hint-wheel"></span>
+    </a>
+  </section>
+
+  <div class="section-wave" aria-hidden="true">
+    <svg viewBox="0 0 1440 60" preserveAspectRatio="none">
+      <path d="M0,32 C360,60 720,0 1080,32 C1260,48 1380,40 1440,32 L1440,60 L0,60 Z" />
+    </svg>
+  </div>
+
+  <!-- About Me Section -->
+  <section id="about">
+    <div class="container">
+      <header class="section-header reveal">
+        <p class="section-label">📖 The Lore</p>
+        <h2 class="section-title">About Me</h2>
+        <div class="divider"></div>
+      </header>
+      <div class="row align-items-center g-4 g-lg-5">
+        <div class="col-lg-6 reveal reveal-left">
+          <div class="about-card">
+            <h3 class="about-heading">No Cap, Just Code & Real-World Solutions 🚀</h3>
+            <p class="about-text">
+              I'm <strong>Lothika K</strong> — an AI & Data Science student focused on full-stack development and
+              machine learning. I enjoy building useful web applications and exploring how AI tools can make them
+              smarter.
+            </p>
+            <p class="about-text">
+              I work across frontend and backend development, build ML projects with Python, and use AI tools to
+              support practical applications. I'm always learning by creating and improving real projects.
+            </p>
+            <div class="about-highlights">
+              <div class="about-badge-item">
+                <i class="fas fa-microchip"></i> <span>AI Tools</span>
+              </div>
+              <div class="about-badge-item">
+                <i class="fas fa-brain"></i> <span>Machine Learning</span>
+              </div>
+              <div class="about-badge-item">
+                <i class="fas fa-laptop-code"></i> <span>Full-Stack Development</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 reveal reveal-right">
+          <div class="row g-3">
+            <div class="col-sm-6">
+              <div class="about-feature-box">
+                <div class="about-icon"><i class="fas fa-brain"></i></div>
+                <h4>Machine Learning</h4>
+                <p>Exploring data, training models, and building ML projects with Python.</p>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="about-feature-box">
+                <div class="about-icon"><i class="fas fa-wand-magic-sparkles"></i></div>
+                <h4>AI Tools</h4>
+                <p>Using AI tools and LLMs to build helpful, intelligent applications.</p>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="about-feature-box">
+                <div class="about-icon"><i class="fas fa-code-branch"></i></div>
+                <h4>Full-Stack Development</h4>
+                <p>Building web applications across the frontend and backend.</p>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="about-feature-box">
+                <div class="about-icon"><i class="fas fa-laptop-code"></i></div>
+                <h4>Project Building</h4>
+                <p>Applying full-stack, ML, and AI skills to practical projects.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- [EXACT MATCH TO USER IMAGE] Education Section -->
+  <section id="education">
+    <div class="container">
+      <header class="section-header reveal">
+        <p class="section-label">🎓 THE DEGREE IS LOADING... ⏳</p>
+        <h2 class="section-title">Education</h2>
+        <div class="divider"></div>
+      </header>
+
+      <div class="row g-4">
+        <!-- Education Card 1: Degree -->
+        <div class="col-lg-6 reveal reveal-left">
+          <div class="edu-card tilt-card">
+            <div class="edu-icon">
+              <span>🎓</span>
+            </div>
+            <div class="edu-info">
+              <h3 class="edu-degree">B.E. in Artificial Intelligence & Data Science</h3>
+              <p class="edu-school">Erode Sengunthar Engineering College (Autonomous),Perundurai.</p>
+              <p class="edu-year">2024 – 2028 · Currently In 3rd Year</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Education Card 2: Focus Areas -->
+        <div class="col-lg-6 reveal reveal-right">
+          <div class="edu-card tilt-card">
+            <div class="edu-icon edu-icon--focus">
+              <span>💡</span>
+            </div>
+            <div class="edu-info">
+              <h3 class="edu-degree">Focus Areas</h3>
+              <p class="edu-school">Machine Learning · Backend Development · Automation</p>
+              <p class="edu-year">Building production-ready systems since Year 1</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- [UPDATED TO MATCH USER IMAGE] Skills & Technologies Section -->
+  <section id="skills">
+    <div class="container">
+      <header class="section-header reveal">
+        <p class="section-label">🎮 Skill Tree Unlocked</p>
+        <h2 class="section-title">Skills & Technologies</h2>
+        <div class="divider"></div>
+      </header>
+
+      <div class="skills-board reveal">
+
+        <!-- Category 1: Frontend -->
+        <div class="skill-category-group">
+          <h3 class="skill-group-title">⚡ Frontend</h3>
+          <div class="skill-badge-row">
+            <span class="badge-pill bg-react"><i class="fab fa-react"></i> REACT</span>
+            <span class="badge-pill bg-vite"><i class="fas fa-bolt"></i> VITE</span>
+            <span class="badge-pill bg-html5"><i class="fab fa-html5"></i> HTML5</span>
+            <span class="badge-pill bg-css3"><i class="fab fa-css3-alt"></i> CSS3</span>
+            <span class="badge-pill bg-js"><i class="fab fa-js"></i> JAVASCRIPT</span>
+          </div>
+        </div>
+
+        <!-- Category 2: Backend -->
+        <div class="skill-category-group">
+          <h3 class="skill-group-title">🧠 Backend</h3>
+          <div class="skill-badge-row">
+            <span class="badge-pill bg-python"><i class="fab fa-python"></i> PYTHON</span>
+            <span class="badge-pill bg-fastapi"><i class="fas fa-bolt"></i> FASTAPI</span>
+            <span class="badge-pill bg-flask"><i class="fas fa-pepper-hot"></i> FLASK</span>
+          </div>
+        </div>
+
+        <!-- Category 3: Database & Cloud -->
+        <div class="skill-category-group">
+          <h3 class="skill-group-title">💾 Database & Cloud</h3>
+          <div class="skill-badge-row">
+            <span class="badge-pill bg-sqlite"><i class="fas fa-database"></i> SQLITE</span>
+            <span class="badge-pill bg-postgres"><i class="fas fa-database"></i> POSTGRESQL</span>
+            <span class="badge-pill bg-supabase"><i class="fas fa-bolt"></i> SUPABASE</span>
+            <span class="badge-pill bg-mysql"><i class="fas fa-database"></i> MYSQL</span>
+          </div>
+        </div>
+
+        <!-- Category 4: DevOps & Tools -->
+        <div class="skill-category-group">
+          <h3 class="skill-group-title">🚀 DevOps & Tools</h3>
+          <div class="skill-badge-row">
+            <span class="badge-pill bg-git"><i class="fab fa-git-alt"></i> GIT</span>
+            <span class="badge-pill bg-github"><i class="fab fa-github"></i> GITHUB</span>
+            <span class="badge-pill bg-vercel"><i class="fas fa-cloud-upload-alt"></i> VERCEL</span>
+            <span class="badge-pill bg-render"><i class="fas fa-server"></i> RENDER</span>
+            <span class="badge-pill bg-n8n"><i class="fas fa-diagram-project"></i> N8N</span>
+            <span class="badge-pill bg-docker"><i class="fab fa-docker"></i> DOCKER</span>
+          </div>
+        </div>
+
+        <!-- Category 5: AI / Data Science -->
+        <div class="skill-category-group">
+          <h3 class="skill-group-title">🤖 AI / Data Science</h3>
+          <div class="skill-badge-row">
+            <span class="badge-pill bg-scikit"><i class="fas fa-brain"></i> SCIKIT-LEARN</span>
+            <span class="badge-pill bg-numpy"><i class="fas fa-chart-line"></i> NUMPY</span>
+            <span class="badge-pill bg-pandas"><i class="fas fa-table"></i> PANDAS</span>
+            <span class="badge-pill bg-powerbi"><i class="fas fa-chart-pie"></i> POWERBI</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects">
+    <div class="container">
+      <header class="section-header reveal">
+        <p class="section-label">💻 Things I've Cooked</p>
+        <h2 class="section-title">Featured Projects</h2>
+        <div class="divider"></div>
+      </header>
+      <div class="row g-4">
+
+        <div class="col-md-6 col-lg-4 reveal stagger-1">
+          <article class="project-card project-card--purple">
+            <div class="project-content">
+              <h3 class="project-title project-title--purple">Insta Prompt Automation</h3>
+              <p class="project-desc">Full-stack app that automatically sends AI prompts via Instagram DM when users comment "PROMPT" on reels.</p>
+              <div class="tech-tags">
+                <span class="tech-tag">React</span>
+                <span class="tech-tag">Vite</span>
+                <span class="tech-tag">FastAPI</span>
+                <span class="tech-tag">SQLite</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/lothi-07/Insta-prompt-automation" target="_blank" rel="noopener" class="project-link project-link--purple">View Repo <span>↗</span></a>
+                <a href="https://insta-prompt-automation.vercel.app/" target="_blank" rel="noopener" class="project-link project-link--purple">Live Demo <span>↗</span></a>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div class="col-md-6 col-lg-4 reveal stagger-2">
+          <article class="project-card project-card--green">
+            <div class="project-content">
+              <h3 class="project-title project-title--green">Roast My Code</h3>
+              <p class="project-desc">AI-powered automated code review bot using n8n workflows, GitHub Webhooks, Groq LLM and Telegram integration.</p>
+              <div class="tech-tags">
+                <span class="tech-tag">n8n</span>
+                <span class="tech-tag">GitHub API</span>
+                <span class="tech-tag">Groq LLM</span>
+                <span class="tech-tag">Telegram</span>
+              </div>
+              <a href="https://github.com/lothi-07/roast-my-code" target="_blank" rel="noopener" class="project-link project-link--green">View Repo <span>↗</span></a>
+            </div>
+          </article>
+        </div>
+
+        <div class="col-md-6 col-lg-4 reveal stagger-3">
+          <article class="project-card project-card--orange">
+            <div class="project-content">
+              <h3 class="project-title project-title--orange">Complaint Management System</h3>
+              <p class="project-desc">Live grievance portal for citizens to submit, track, and resolve community complaints with real-time updates.</p>
+              <div class="tech-tags">
+                <span class="tech-tag">Node.js</span>
+                <span class="tech-tag">Express</span>
+                <span class="tech-tag">Full Stack</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/lothi-07/complaint-management-system" target="_blank" rel="noopener" class="project-link project-link--orange">View Repo <span>↗</span></a>
+                <a href="https://grievance-hub.onrender.com/" target="_blank" rel="noopener" class="project-link project-link--orange">Live Demo <span>↗</span></a>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div class="col-md-6 col-lg-4 reveal stagger-1">
+          <article class="project-card project-card--red">
+            <div class="project-content">
+              <h3 class="project-title project-title--red">VoteFlow</h3>
+              <p class="project-desc">Full-stack voter registration system featuring secure administrator access, verification, and data-driven workflows.</p>
+              <div class="tech-tags">
+                <span class="tech-tag">JavaScript</span>
+                <span class="tech-tag">HTML</span>
+                <span class="tech-tag">PowerShell</span>
+                <span class="tech-tag">CSS</span>
+                <span class="tech-tag">Batchfile</span>
+              </div>
+              <a href="https://github.com/lothi-07/voteflow" target="_blank" rel="noopener" class="project-link project-link--red">View Repo <span>↗</span></a>
+            </div>
+          </article>
+        </div>
+
+        <div class="col-md-6 col-lg-4 reveal stagger-2">
+          <article class="project-card project-card--cyan">
+            <div class="project-content">
+              <h3 class="project-title project-title--cyan">Smart Web Portal</h3>
+              <p class="project-desc">Multi-purpose web portal built with dynamic JavaScript frontends and Python backend tools for data handling.</p>
+              <div class="tech-tags">
+                <span class="tech-tag">JavaScript</span>
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">Full Stack</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/lothi-07/new_portal" target="_blank" rel="noopener" class="project-link project-link--cyan">View Repo <span>↗</span></a>
+                <a href="https://new-portal-ruby.vercel.app/" target="_blank" rel="noopener" class="project-link project-link--cyan">Live Demo <span>↗</span></a>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div class="col-md-6 col-lg-4 reveal stagger-3">
+          <article class="project-card project-card--pink">
+            <div class="project-content">
+              <h3 class="project-title project-title--pink">Claude Pulse</h3>
+              <p class="project-desc">Chrome extension that shows Claude.ai session and weekly usage limits and tracks token usage across conversations.</p>
+              <div class="tech-tags">
+                <span class="tech-tag">JavaScript</span>
+                <span class="tech-tag">HTML</span>
+                <span class="tech-tag">CSS</span>
+                <span class="tech-tag">Chrome Extension</span>
+              </div>
+              <a href="https://github.com/lothi-07/Claude-pulse" target="_blank" rel="noopener" class="project-link project-link--pink">View Repo <span>↗</span></a>
+            </div>
+          </article>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- [UPDATED] Clean Direct Contact Cards (Message Box Form Removed) -->
+  <!-- [EXACT MATCH TO USER IMAGE] Contact / Hit Me Up Section -->
+  <section id="contact">
+    <div class="contact-stars" aria-hidden="true"></div>
+    <div class="container position-relative">
+      <div class="row g-5 align-items-center">
+        <!-- Left Column: Title & Subtitle -->
+        <div class="col-lg-5 reveal reveal-left">
+          <header class="section-header section-header--light text-start mb-4">
+            <p class="section-label">🚀 LET'S MAKE SOMETHING COOL TOGETHER.</p>
+            <h2 class="section-title">Hit Me Up</h2>
+            <div class="divider"></div>
+          </header>
+          <p class="section-subtitle-left">
+            I'm always open to exciting opportunities, collaborations, and conversations.
+          </p>
+        </div>
+
+        <!-- Right Column: 2x2 Contact Cards Grid -->
+        <div class="col-lg-7 reveal reveal-right">
+          <div class="row g-3">
+            <div class="col-sm-6">
+              <a href="mailto:lothika6649@gmail.com" class="contact-card-horizontal">
+                <div class="contact-card-icon"><i class="fas fa-envelope"></i></div>
+                <div class="contact-card-info">
+                  <span class="contact-card-label">Inbox is waiting</span>
+                  <span class="contact-card-value">lothika6649@gmail.com</span>
+                </div>
+              </a>
+            </div>
+            <div class="col-sm-6">
+              <a href="https://www.linkedin.com/in/lothika-k-01a984355" target="_blank" rel="noopener"
+                class="contact-card-horizontal">
+                <div class="contact-card-icon"><i class="fab fa-linkedin-in"></i></div>
+                <div class="contact-card-info">
+                  <span class="contact-card-label">Let's Connect</span>
+                  <span class="contact-card-value">Lothika K</span>
+                </div>
+              </a>
+            </div>
+            <div class="col-sm-6">
+              <a href="https://github.com/lothi-07" target="_blank" rel="noopener" class="contact-card-horizontal">
+                <div class="contact-card-icon"><i class="fab fa-github"></i></div>
+                <div class="contact-card-info">
+                  <span class="contact-card-label">Follow Me</span>
+                  <span class="contact-card-value">lothi-07</span>
+                </div>
+              </a>
+            </div>
+            <div class="col-sm-6">
+              <div class="contact-card-horizontal contact-card-horizontal--static">
+                <div class="contact-card-icon"><i class="fas fa-location-dot"></i></div>
+                <div class="contact-card-info">
+                  <span class="contact-card-label">Location</span>
+                  <span class="contact-card-value">Erode, Tamil Nadu</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-social">
+        <a href="https://github.com/lothi-07" target="_blank" rel="noopener" aria-label="GitHub"><i
+            class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/lothika-k-01a984355" target="_blank" rel="noopener"
+          aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+        <a href="mailto:lothika6649@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+      </div>
+      <p class="footer-note">"Coding is the art of turning wild ideas into something people can actually use." ✨</p>
+      <p class="footer-copy">&copy; 2026 Lothika K · All rights reserved</p>
+    </div>
+  </footer>
+
+  <!-- Back to top -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
